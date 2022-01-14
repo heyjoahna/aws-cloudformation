@@ -1,2 +1,2 @@
-# aws-cloudformation
-A collection of AWS CloudFormation templates
+# AWS CloudFormation
+A collection of AWS CloudFormation templates with security configuration 
