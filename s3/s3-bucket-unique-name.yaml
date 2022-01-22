@@ -7,8 +7,8 @@ Parameters:
   BucketPrefix:
     Description: Value that will be prefixed to the bucket name (letters must be in lowercase)
     Type: String
-    AllowedPattern: '[a-z0-9-.]*'
-    ConstraintDescription: Must only contain lowercase letters, numbers, periods (.), and dashes (-)
+    AllowedPattern: '^[a-z0-9][a-z0-9-.]+$'
+    ConstraintDescription: Must only contain lowercase letters, numbers, periods (.), and dashes (-) and it must begin with a letter or number.
 
 #-----------
 Resources:
