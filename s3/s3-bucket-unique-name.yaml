@@ -4,8 +4,8 @@ Description: Sample template that creates an S3 bucket with a unique name
 #-----------
 Parameters:
 #-----------
-  ResourcePrefix:
-    Description: Value that will be prefixed to resource names (letters must be in lowercase)
+  BucketPrefix:
+    Description: Value that will be prefixed to the bucket name (letters must be in lowercase)
     Type: String
     AllowedPattern: '[a-z0-9-.]*'
     ConstraintDescription: Must only contain lowercase letters, numbers, periods (.), and dashes (-)
@@ -18,7 +18,7 @@ Resources:
     Properties:
       BucketName: !Join 
         - '-'
-        - - !Ref ResourcePrefix
+        - - !Ref BucketPrefix
           - !Ref AWS::AccountId
           - !Ref AWS::Region
           - 'bucket'
