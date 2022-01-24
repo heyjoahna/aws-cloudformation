@@ -7,14 +7,10 @@ Parameters:
   ConnectInstanceId:
     Description: Amazon Connect instance id
     Type: String
-    AllowedPattern: '.+'
-    ConstraintDescription: Must not be blank
 
   ConnectQueueId:
     Description: Amazon Connect queue id
     Type: String
-    AllowedPattern: '.+'
-    ConstraintDescription: Must not be blank
 
 #-----------
 Resources:
